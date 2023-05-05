@@ -11,7 +11,8 @@
 
 %%
 % This script uses saved data from process_data_trials.m to plot results
-% across different bandwidths.
+% across different bandwidths. The saved data provided is from evaluating
+% all measurements taken in LOS conditions.
 
 clear
 close all
@@ -42,7 +43,7 @@ dist_err_chstitch745_HESU = load('.\savedata\HESU_20_AllLOS').dist_err_chstitch7
 dist_err_chstitch745_VHT = load('.\savedata\VHT_20_AllLOS').dist_err_chstitch745;
 dist_err_chstitch745_Legacy = cat(3,load('.\savedata\HESU_20_AllLOS').dist_err_chstitch745_legacy,load('.\savedata\VHT_20_AllLOS').dist_err_chstitch745_legacy);
 
-%% Concated results across LTF types
+%% Concatenate results across LTF types
 
 dist_err_20 = cat(3,dist_err_HESU20,dist_err_VHT20,dist_err_Legacy20);
 dist_err_40 = cat(3,dist_err_HESU40,dist_err_VHT40,dist_err_Legacy40);
@@ -51,7 +52,7 @@ dist_err_160 = cat(3,dist_err_HESU160,dist_err_VHT160,dist_err_Legacy160);
 dist_err_chstitch320 = cat(3,dist_err_chstitch320_HESU,dist_err_chstitch320_VHT,dist_err_chstitch320_Legacy);
 dist_err_chstitch745 = cat(3,dist_err_chstitch745_HESU,dist_err_chstitch745_VHT,dist_err_chstitch745_Legacy);
 
-%% Compute RMSEs across LTF types
+%% Compute RMSEs
 
 dist_rmse_20 = sqrt(mean(dist_err_20(:).^2));
 dist_rmse_40 = sqrt(mean(dist_err_40(:).^2));
