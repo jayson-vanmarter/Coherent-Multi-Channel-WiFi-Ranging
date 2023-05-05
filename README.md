@@ -13,3 +13,9 @@ https://utdallas.box.com/v/WiFi-Ranging-Testbed-Data
 
 ## Quick Start
 
+1. Download the provided data set
+2. Set the trial names and distances in the _process_data_trials_ script.
+3. Set the packet type and bandwidth in _process_data_trials_.
+4. Run _process_data_trials_.
+
+An example plot across multiple bandwidths using results from running _process_data_trials_ can be created by running _plot_multiple_results_.
