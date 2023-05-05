@@ -19,3 +19,6 @@ https://utdallas.box.com/v/WiFi-Ranging-Testbed-Data
 4. Run _process_data_trials.m_.
 
 An example plot across multiple bandwidths using results from running _process_data_trials.m_ can be created by running _plot_multiple_results.m_.
+
+# License
+[GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/)
