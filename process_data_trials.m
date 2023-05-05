@@ -27,8 +27,8 @@ filepath_cal = '.\savedata\Calibration\';
 
 % Get the trial names and true distances for a given data set or across
 % multiple data sets
-[trialnames1,dist_true1] = get_trialdir_info("downstairslab");
-[trialnames2,dist_true2] = get_trialdir_info("twolab_LOS");
+[trialnames1,dist_true1] = get_trialdir_info("lab_room");
+[trialnames2,dist_true2] = get_trialdir_info("roomtoroom_LOS");
 [trialnames3,dist_true3] = get_trialdir_info("classroom");
 [trialnames4,dist_true4] = get_trialdir_info("indoor_open_space");
 trialnames = [trialnames1;trialnames2;trialnames3;trialnames4]; % Concatenate trial names
@@ -45,14 +45,14 @@ num_locs = length(trialnames); % Number of unique locations evaluated
 % Throughput)
 % Bandwidths: 20, 40, 80, 160 MHz
 
-filename = 'HESU_20'; % HESU, 20 MHz BW
+% filename = 'HESU_20'; % HESU, 20 MHz BW
 % filename = 'HESU_40'; % HESU, 40 MHz BW
 % filename = 'HESU_80'; % HESU, 80 MHz BW
 % filename = 'HESU_160'; % HESU, 160 MHz BW
 % filename = 'VHT_20'; % VHT, 20 MHz BW
 % filename = 'VHT_40'; % VHT, 40 MHz BW
 % filename = 'VHT_80'; % VHT, 80 MHz BW
-% filename = 'VHT_160'; % VHT, 160 MHz BW
+filename = 'VHT_160'; % VHT, 160 MHz BW
 
 % Get the corresponding bandwidth in MHz
 BW = str2double(erase(filename,{'HESU_','VHT_'})); 
@@ -142,7 +142,7 @@ for p = 1:num_locs
             % Console output
             disp(['Location ',num2str(p),'/',num2str(num_locs),...
                 ', Channel ',num2str(k),'/',num2str(length(sve.fc)),...
-                ', Err: ',num2str(dist_est_all(p,k,u,1)-dist_true(p)),', ',num2str(dist_est_all(p,k,u,2)-dist_true(p))]);
+                ', Dist Errs: ',num2str(dist_est_all(p,k,u,1)-dist_true(p)),', ',num2str(dist_est_all(p,k,u,2)-dist_true(p))]);
         
         end
     
@@ -163,10 +163,10 @@ for p = 1:num_locs
         if sve.fs == 20e6
             disp('---')
             disp(['Location ',num2str(p),'/',num2str(num_locs),...
-                ', 320 MHz Stitch Err: ',num2str(dist_est_chstitch320_all(p,u,1)-dist_true(p)),...
+                ', 320 MHz Stitch Dist Errs: ',num2str(dist_est_chstitch320_all(p,u,1)-dist_true(p)),...
                 ', ',num2str(dist_est_chstitch320_all(p,u,2)-dist_true(p))]);
             disp(['Location ',num2str(p),'/',num2str(num_locs),...
-                ', 745 MHz Stitch Err: ',num2str(dist_est_chstitch745_all(p,u,1)-dist_true(p)),...
+                ', 745 MHz Stitch Dist Errs: ',num2str(dist_est_chstitch745_all(p,u,1)-dist_true(p)),...
                     ', ',num2str(dist_est_chstitch745_all(p,u,2)-dist_true(p))]);
                 
             disp('---')
@@ -206,6 +206,13 @@ dist_rmse_chstitch745_legacy = sqrt(mean(dist_err_chstitch745_legacy(:).^2));
 
 % LOS trials
 % load('.\savedata\HESU_20_AllLOS')
+% load('.\savedata\HESU_40_AllLOS')
+% load('.\savedata\HESU_80_AllLOS')
+% load('.\savedata\HESU_160_AllLOS')
+% load('.\savedata\VHT_20_AllLOS')
+% load('.\savedata\VHT_40_AllLOS')
+% load('.\savedata\VHT_80_AllLOS')
+% load('.\savedata\VHT_160_AllLOS')
 
 %% Plot CDFs
 close all
