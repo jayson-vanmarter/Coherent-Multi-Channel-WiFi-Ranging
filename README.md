@@ -20,7 +20,7 @@ If you use our code or data in your research, please cite our paper:
 1. Download the provided data set
 2. Set the trial names and distances in _process_data_trials.m_.
 3. Set the packet type and bandwidth in _process_data_trials.m_.
-4. Run _process_data_trials.m_.
+4. Run _process_data_trials.m_ to generate distance estimates per trial, error results, root mean square error (RMSE) results, and CDF plots.
 
 An example plot across multiple bandwidths using results from running _process_data_trials.m_ can be created by running _plot_multiple_results.m_.
 
