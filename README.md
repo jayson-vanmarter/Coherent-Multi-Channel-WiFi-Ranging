@@ -1,6 +1,6 @@
 # Coherent-Multi-Channel-WiFi-Ranging
 
-This repository contains the data and code related to "Coherent Multi-Channel WiFi Ranging for Next Generation Positioning."
+This repository contains the data and code related to "Coherent Multi-Channel WiFi Ranging for Next Generation Positioning." This work demonstrates the potential of multi-channel WiFi ranging using timestamp and CFR measurements supporting Next Generation Positioning. Utilizing our proposed methods, we demonstrate centimeter-level ranging accuracy in line-of-sight (LOS) conditions for stitched bandwidths of at least 320 MHz.
 
 Paper Citation:  
 > J. P. Van Marter, M. Ben-Shachar, Y. Alpert, A. G. Dabak, N. Al-Dhahir, and M.Torlak, "Coherent Multi-Channel WiFi Ranging for Next Generation Positioning," May 2023.
