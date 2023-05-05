@@ -5,7 +5,7 @@ This repository contains the data and code related to our paper "Coherent Multi-
 Data set:  
 https://utdallas.box.com/v/WiFi-Ranging-Testbed-Data
 
-If you use our code or data in your research, please cite our paper:  
+If you use our code/methods or data in your research, please cite our paper:  
 ```
 @article{VanMarter-WiFiRanging,
   author = {Van Marter, Jayson P. and Ben-Shachar, Matan and Alpert, Yaron and Dabak, Anand G. and Al-Dhahir, Naofal and Torlak, Murat},
@@ -17,8 +17,8 @@ If you use our code or data in your research, please cite our paper:
 
 ## Quick Start
 
-1. Download the provided data set
-2. Set the trial names and distances in _process_data_trials.m_.
+1. Download the code and data set.
+2. Set the location trial names and distances in _process_data_trials.m_.
 3. Set the packet type and bandwidth in _process_data_trials.m_.
 4. Run _process_data_trials.m_ to generate distance estimates per trial, error results, RMSE results, and CDF plots.
 
