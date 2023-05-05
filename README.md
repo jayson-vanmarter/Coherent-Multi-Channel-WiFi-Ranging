@@ -7,3 +7,6 @@ J. P. Van Marter, M. Ben-Shachar, Y. Alpert, A. G. Dabak, N. Al-Dhahir, and M.To
 
 Repository Citation:  
 J. P. Van Marter, “Coherent Multi-channel WiFi ranging,” May 2023. [Online]. Available: https://github.com/jayson-vanmarter/Coherent-Multi-Channel-WiFi-Ranging
+
+Dataset:
+https://utdallas.box.com/v/WiFi-Ranging-Testbed-Data
