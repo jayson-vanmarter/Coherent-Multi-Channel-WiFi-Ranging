@@ -14,7 +14,7 @@ https://utdallas.box.com/v/WiFi-Ranging-Testbed-Data
 ## Quick Start
 
 1. Download the provided data set
-2. Set the trial names and distances in the _process_data_trials.m_ script.
+2. Set the trial names and distances in the _process_data_trials.m_.
 3. Set the packet type and bandwidth in _process_data_trials.m_.
 4. Run _process_data_trials.m_.
 
