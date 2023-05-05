@@ -18,7 +18,7 @@ If you use our code or data in your research, please cite our paper:
 ## Quick Start
 
 1. Download the provided data set
-2. Set the trial names and distances in the _process_data_trials.m_.
+2. Set the trial names and distances in _process_data_trials.m_.
 3. Set the packet type and bandwidth in _process_data_trials.m_.
 4. Run _process_data_trials.m_.
 
