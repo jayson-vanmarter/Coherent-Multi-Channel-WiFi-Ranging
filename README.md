@@ -2,14 +2,18 @@
 
 This repository contains the data and code related to "Coherent Multi-Channel WiFi Ranging for Next Generation Positioning." This work demonstrates the potential of multi-channel WiFi ranging using timestamp and CFR measurements supporting Next Generation Positioning. Utilizing our proposed methods, we demonstrate centimeter-level ranging accuracy in line-of-sight (LOS) conditions for stitched bandwidths of at least 320 MHz.
 
-Paper Citation:  
-> J. P. Van Marter, M. Ben-Shachar, Y. Alpert, A. G. Dabak, N. Al-Dhahir, and M.Torlak, "Coherent Multi-Channel WiFi Ranging for Next Generation Positioning," May 2023.
-
-Repository Citation:  
-> J. P. Van Marter, “Coherent Multi-channel WiFi ranging,” May 2023. [Online]. Available: https://github.com/jayson-vanmarter/Coherent-Multi-Channel-WiFi-Ranging
-
 Data set:  
 https://utdallas.box.com/v/WiFi-Ranging-Testbed-Data
+
+If you use our code or data in your research, please cite our paper:  
+```
+@article{VanMarter-WiFiRanging,
+  author = {Van Marter, Jayson P. and Ben-Shachar, Matan and Alpert, Yaron and Dabak, Anand G. and Al-Dhahir, Naofal and Torlak, Murat},
+  journal = {}, 
+  title = {Coherent Multi-Channel WiFi Ranging for Next Generation Positioning}, 
+  year = {2023},
+}
+```
 
 ## Quick Start
 
