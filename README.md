@@ -8,14 +8,14 @@ Paper Citation:
 Repository Citation:  
 > J. P. Van Marter, “Coherent Multi-channel WiFi ranging,” May 2023. [Online]. Available: https://github.com/jayson-vanmarter/Coherent-Multi-Channel-WiFi-Ranging
 
-Dataset:  
+Data set:  
 https://utdallas.box.com/v/WiFi-Ranging-Testbed-Data
 
 ## Quick Start
 
 1. Download the provided data set
-2. Set the trial names and distances in the _process_data_trials_ script.
-3. Set the packet type and bandwidth in _process_data_trials_.
-4. Run _process_data_trials_.
+2. Set the trial names and distances in the _process_data_trials.m_ script.
+3. Set the packet type and bandwidth in _process_data_trials.m_.
+4. Run _process_data_trials.m_.
 
-An example plot across multiple bandwidths using results from running _process_data_trials_ can be created by running _plot_multiple_results_.
+An example plot across multiple bandwidths using results from running _process_data_trials.m_ can be created by running _plot_multiple_results.m_.
