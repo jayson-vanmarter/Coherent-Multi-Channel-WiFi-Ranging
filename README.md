@@ -24,5 +24,5 @@ If you use our code/methods or data in your research, please cite our paper:
 
 An example CDF plot across multiple bandwidths using results from running _process_data_trials.m_ can be created by running _plot_multiple_results.m_.
 
-# License
+## License
 [GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/)
