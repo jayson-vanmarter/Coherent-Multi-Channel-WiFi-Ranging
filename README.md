@@ -1,6 +1,6 @@
 # Coherent-Multi-Channel-WiFi-Ranging
 
-This repository contains the data and code related to our paper "Coherent Multi-Channel WiFi Ranging for Next Generation Positioning." This work proposes methods for coherent multi-channel WiFi ranging using timestamp and CFR measurements supporting Next Generation Positioning. Utilizing our proposed methods and collected data in real-world indoor evironments, we demonstrate a 90th percentile ranging error of 9 cm in line-of-sight (LOS) conditions for stitched bandwidths of at least 320 MHz.
+This repository contains the data and code related to our paper "Coherent Multi-Channel WiFi Ranging for Next Generation Positioning" (under review). This work proposes methods for coherent multi-channel WiFi ranging using timestamp and CFR measurements supporting Next Generation Positioning. Utilizing our proposed methods and collected data in real-world indoor evironments, we demonstrate a 90th percentile ranging error of 9 cm in line-of-sight (LOS) conditions for stitched bandwidths of at least 320 MHz.
 
 Data set:  
 https://utdallas.box.com/v/WiFi-Ranging-Testbed-Data
